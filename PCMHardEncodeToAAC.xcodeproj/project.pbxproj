@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D07BE07204105B90080C2C3 /* BBAudioCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D07BE06204105B90080C2C3 /* BBAudioCapture.m */; };
+		4D07BE0B2041091E0080C2C3 /* BBAudioConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D07BE0A2041091E0080C2C3 /* BBAudioConfig.m */; };
+		4D07BE0F2041157C0080C2C3 /* BBAudioHardEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D07BE0E2041157C0080C2C3 /* BBAudioHardEncoder.m */; };
 		4D094E5320401C0F005BB9D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D094E5220401C0F005BB9D0 /* AppDelegate.m */; };
 		4D094E5620401C0F005BB9D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D094E5520401C0F005BB9D0 /* ViewController.m */; };
 		4D094E5920401C0F005BB9D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D094E5720401C0F005BB9D0 /* Main.storyboard */; };
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D07BE05204105B90080C2C3 /* BBAudioCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAudioCapture.h; sourceTree = "<group>"; };
+		4D07BE06204105B90080C2C3 /* BBAudioCapture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBAudioCapture.m; sourceTree = "<group>"; };
+		4D07BE092041091E0080C2C3 /* BBAudioConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAudioConfig.h; sourceTree = "<group>"; };
+		4D07BE0A2041091E0080C2C3 /* BBAudioConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBAudioConfig.m; sourceTree = "<group>"; };
+		4D07BE0D2041157C0080C2C3 /* BBAudioHardEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAudioHardEncoder.h; sourceTree = "<group>"; };
+		4D07BE0E2041157C0080C2C3 /* BBAudioHardEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBAudioHardEncoder.m; sourceTree = "<group>"; };
 		4D094E4E20401C0F005BB9D0 /* PCMHardEncodeToAAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCMHardEncodeToAAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D094E5120401C0F005BB9D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4D094E5220401C0F005BB9D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +87,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D07BE042041059A0080C2C3 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				4D07BE05204105B90080C2C3 /* BBAudioCapture.h */,
+				4D07BE06204105B90080C2C3 /* BBAudioCapture.m */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		4D07BE08204109070080C2C3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4D07BE092041091E0080C2C3 /* BBAudioConfig.h */,
+				4D07BE0A2041091E0080C2C3 /* BBAudioConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		4D07BE0C204115440080C2C3 /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				4D07BE0D2041157C0080C2C3 /* BBAudioHardEncoder.h */,
+				4D07BE0E2041157C0080C2C3 /* BBAudioHardEncoder.m */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
 		4D094E4520401C0F005BB9D0 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +137,9 @@
 		4D094E5020401C0F005BB9D0 /* PCMHardEncodeToAAC */ = {
 			isa = PBXGroup;
 			children = (
+				4D07BE0C204115440080C2C3 /* Encoder */,
+				4D07BE08204109070080C2C3 /* Config */,
+				4D07BE042041059A0080C2C3 /* Capture */,
 				4D094E5120401C0F005BB9D0 /* AppDelegate.h */,
 				4D094E5220401C0F005BB9D0 /* AppDelegate.m */,
 				4D094E5420401C0F005BB9D0 /* ViewController.h */,
@@ -265,7 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D07BE0F2041157C0080C2C3 /* BBAudioHardEncoder.m in Sources */,
 				4D094E5620401C0F005BB9D0 /* ViewController.m in Sources */,
+				4D07BE0B2041091E0080C2C3 /* BBAudioConfig.m in Sources */,
+				4D07BE07204105B90080C2C3 /* BBAudioCapture.m in Sources */,
 				4D094E6120401C0F005BB9D0 /* main.m in Sources */,
 				4D094E5320401C0F005BB9D0 /* AppDelegate.m in Sources */,
 			);
@@ -433,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DUN98ZEQRP;
 				INFOPLIST_FILE = PCMHardEncodeToAAC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibabyblue..PCMHardEncodeToAAC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DUN98ZEQRP;
 				INFOPLIST_FILE = PCMHardEncodeToAAC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibabyblue..PCMHardEncodeToAAC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
