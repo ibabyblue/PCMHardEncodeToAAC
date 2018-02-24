@@ -13,7 +13,6 @@
 +(instancetype)defaultConfig{
     BBAudioConfig *config = [[self alloc] init];
     config.channels = 2;
-    config.bitRate = BBAudioBitRate_Default;
     config.sampleRate = BBAudioSampleRate_44100Hz;
     return config;
 }
