@@ -6,3 +6,4 @@
 ## 参考地址：
     https://wiki.multimedia.cx/index.php?title=ADTS
     http://blog.csdn.net/ownwell/article/details/8114121/
+    感谢学习路上无私分享的开发者，Jovins、iossigner，感恩！
